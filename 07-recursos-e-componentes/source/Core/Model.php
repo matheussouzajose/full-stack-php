@@ -4,6 +4,7 @@ namespace Source\Core;
 
 use PDOException;
 use PDOStatement;
+use Source\Support\Message;
 
 /**
  *

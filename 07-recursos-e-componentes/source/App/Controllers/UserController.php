@@ -5,7 +5,7 @@ namespace Source\App\Controllers;
 use CoffeeCode\Paginator\Paginator;
 use Source\Core\Connect;
 use Source\Core\Controller;
-use Source\Core\Message;
+use Source\Support\Message;
 use Source\Core\View;
 use Source\Models\User;
 

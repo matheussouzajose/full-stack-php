@@ -8,3 +8,8 @@ require __DIR__ . "/../vendor/autoload.php";
  * [ routes ]
  */
 fullStackPHPClassSession("routes", __LINE__);
+
+use Source\Core\Route;
+
+Route::get("/", "UserController:home");
+Route::get("/editar", "UserController:edit");

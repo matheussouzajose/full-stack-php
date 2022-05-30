@@ -9,6 +9,7 @@ class Route
     public static function get(string $route, $handler): void
     {
         $get = "/" . filter_input(INPUT_GET, "url", FILTER_SANITIZE_SPECIAL_CHARS);
+
         self::$route = [
             $route => [
                 "route" => $route,
