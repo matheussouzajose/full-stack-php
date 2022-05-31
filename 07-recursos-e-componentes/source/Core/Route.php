@@ -8,7 +8,7 @@ class Route
 
     public static function get(string $route, $handler): void
     {
-        $get = "/" . filter_input(INPUT_GET, "url", FILTER_SANITIZE_SPECIAL_CHARS);
+        $get = "/" . filter_input(INPUT_GET, "route", FILTER_SANITIZE_SPECIAL_CHARS);
 
         self::$route = [
             $route => [
@@ -43,7 +43,7 @@ class Route
         }
     }
 
-    public function routes(): array
+    public static function routes(): array
     {
         return self::$route;
     }

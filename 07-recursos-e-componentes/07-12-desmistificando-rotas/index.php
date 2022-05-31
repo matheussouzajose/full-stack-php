@@ -13,3 +13,8 @@ use Source\Core\Route;
 
 Route::get("/", "UserController:home");
 Route::get("/editar", "UserController:edit");
+
+Route::get("/rotas", function () {
+    var_dump($_GET);
+    var_dump(Route::routes());
+});
